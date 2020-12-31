@@ -1,8 +1,10 @@
-import React from 'react';
+import Header from '../components/Header';
 
 const Main: React.FC = () => {
     return (
-        <h1>Hello Bankist</h1>
+        <main className="bg-gray-100 p-4">
+            <Header />
+        </main>
     );
 }
 
