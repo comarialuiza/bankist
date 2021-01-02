@@ -3,9 +3,9 @@ import logo from '../assets/logo.png';
 const Header: React.FC = () => {
     return (
         <header className="container mx-auto py-2 grid grid-cols-3">
-            <p>Log in to get started</p>
+            <p className="flex items-center">Log in to get started</p>
 
-            <h1 className="flex align-center justify-center">
+            <h1 className="flex items-center justify-center">
                 <img src={ logo } alt="Bankist" className="h-16" />
             </h1>
 
