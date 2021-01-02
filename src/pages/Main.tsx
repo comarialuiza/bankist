@@ -1,10 +1,14 @@
 import Header from '../components/Header';
+import Balance from '../components/Balance';
+import Transactions from '../components/Transactions';
 
 const Main: React.FC = () => {
     return (
-        <main className="bg-gray-100 p-4">
+        <div className="bg-gray-100 p-4">
             <Header />
-        </main>
+            <Balance />
+            <Transactions />
+        </div>
     );
 }
 
