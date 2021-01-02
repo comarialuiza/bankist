@@ -4,7 +4,7 @@ import Transactions from '../components/Transactions';
 
 const Main: React.FC = () => {
     return (
-        <div className="bg-gray-100 p-4">
+        <div className="bg-gray-100 p-4 min-h-screen">
             <Header />
             <Balance />
             <Transactions />
