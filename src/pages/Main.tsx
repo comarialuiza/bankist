@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Balance from '../components/Balance';
 import Transactions from '../components/Transactions';
+import Total from '../components/Total';
 
 const Main: React.FC = () => {
     return (
@@ -8,6 +9,7 @@ const Main: React.FC = () => {
             <Header />
             <Balance />
             <Transactions />
+            <Total />
         </div>
     );
 }

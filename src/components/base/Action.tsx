@@ -14,7 +14,7 @@ const Action = ({ title, children, color }: ActionProps) => {
             <form className="flex items-start justify-between mt-4">
                 { children }
 
-                <button type="submit" className="rounded p-2 bg-white">
+                <button type="submit" className="rounded p-2 bg-white flex-shrink-0">
                     <RightIcon className="fill-current text-gray-700 h-6"/>
                 </button>
             </form>

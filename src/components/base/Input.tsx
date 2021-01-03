@@ -10,8 +10,12 @@ const Input = ({ type, label, id }: InputProps) => {
     )
 
     return (
-        <div className="mr-4 flex flex-col items-center">
-            <input type={ type } id={ id } className="w-24 rounded p-2 bg-white bg-opacity-25"/>
+        <div className="mr-4 flex flex-col items-center flex-auto">
+            <input 
+                type={ type } 
+                id={ id } 
+                className="rounded p-2 bg-white bg-opacity-25 w-full focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent" 
+            />
             { labelElement }
         </div>
     );

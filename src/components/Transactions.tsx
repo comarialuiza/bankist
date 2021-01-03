@@ -6,8 +6,22 @@ import TransactionType from '../types/TransactionType';
 
 const Transactions: React.FC = () => {
     return (
-        <div className="max-w-4xl mx-auto flex items-stretch justify-between">
+        <div className="max-w-6xl mx-auto flex items-stretch justify-between">
             <div className="bg-white px-8 rounded-md w-7/12 mr-4 divide-y divide-light-gray-200 text-gray-700 max-h-full overflow-y-auto h-96">
+                <Transaction 
+                    type={ TransactionType.Deposit }
+                    date="02/03/2021"
+                    value="1.300,00"
+                    unit={ UnitType.BRL }
+                />
+
+                <Transaction 
+                    type={ TransactionType.Deposit }
+                    date="02/03/2021"
+                    value="1.300,00"
+                    unit={ UnitType.BRL }
+                />
+
                 <Transaction 
                     type={ TransactionType.Deposit }
                     date="02/03/2021"
