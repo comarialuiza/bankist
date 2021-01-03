@@ -1,4 +1,5 @@
 import Action from './base/Action';
+import Input from './base/Input';
 
 const Transactions: React.FC = () => {
     return (
@@ -61,34 +62,39 @@ const Transactions: React.FC = () => {
 
             <div className="grid gap-4 grid-cols-1 w-5/12">
                 <Action title="Transfer money" color="bg-yellow-400">
-                    <div className="mr-4 flex flex-col items-center">
-                        <input type="text" id="transferTo" className="w-24 rounded p-2"/>
-                        <label htmlFor="transferTo" className="text-gray-700 text-xs mt-2">Transfer to</label>
-                    </div>
+                    <Input
+                        type="text"
+                        label="Transfer to"
+                        id="transferTo"
+                    />
 
-                    <div className="mr-4 flex flex-col items-center">
-                        <input type="text" id="amount" className="w-24 rounded p-2"/>
-                        <label htmlFor="amount" className="text-gray-700 text-xs mt-2">Amount</label>
-                    </div>
+                    <Input 
+                        type="text"
+                        label="Amount"
+                        id="amount"
+                    />
                 </Action>
 
                 <Action title="Request loan" color="bg-red-500">
-                    <div className="mr-4 flex flex-col items-center">
-                        <input type="text" id="transferTo" className="w-24 rounded p-2"/>
-                        <label htmlFor="transferTo" className="text-gray-700 text-xs mt-2">Amount</label>
-                    </div>
+                    <Input 
+                        type="text"
+                        label="amount"
+                        id="amount"
+                    />
                 </Action>
 
                 <Action title="Close account" color="bg-green-600">
-                    <div className="mr-4 flex flex-col items-center">
-                        <input type="text" id="transferTo" className="w-24 rounded p-2"/>
-                        <label htmlFor="transferTo" className="text-gray-700 text-xs mt-2">Confirm user</label>
-                    </div>
+                    <Input 
+                        type="text"
+                        label="Confirm user"
+                        id="confirmUser"
+                    />
 
-                    <div className="mr-4 flex flex-col items-center">
-                        <input type="text" id="amount" className="w-24 rounded p-2"/>
-                        <label htmlFor="amount" className="text-gray-700 text-xs mt-2">Confirm pin</label>
-                    </div>
+                    <Input 
+                        type="text"
+                        label="Confirm pin"
+                        id="confirmPin"
+                    />
                 </Action>
             </div>
         </div>
