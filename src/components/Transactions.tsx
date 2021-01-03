@@ -1,63 +1,47 @@
 import Action from './base/Action';
 import Input from './base/Input';
+import Transaction from './base/Transaction';
+import UnitType from '../types/UnitType';
+import TransactionType from '../types/TransactionType';
 
 const Transactions: React.FC = () => {
     return (
         <div className="max-w-4xl mx-auto flex items-stretch justify-between">
             <div className="bg-white px-8 rounded-md w-7/12 mr-4 divide-y divide-light-gray-200 text-gray-700 max-h-full overflow-y-auto h-96">
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
+                <Transaction 
+                    type={ TransactionType.Deposit }
+                    date="02/03/2021"
+                    value="1.300,00"
+                    unit={ UnitType.BRL }
+                />
 
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
+                <Transaction 
+                    type={ TransactionType.Deposit }
+                    date="02/03/2021"
+                    value="1.300,00"
+                    unit={ UnitType.BRL }
+                />
 
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
+                <Transaction 
+                    type={ TransactionType.Deposit }
+                    date="02/03/2021"
+                    value="1.300,00"
+                    unit={ UnitType.BRL }
+                />
 
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
+                <Transaction 
+                    type={ TransactionType.Deposit }
+                    date="02/03/2021"
+                    value="1.300,00"
+                    unit={ UnitType.BRL }
+                />
 
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
-
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
-
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
-
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
-
-                <div className="py-6 flex items-center justify-between">
-                    <p className="bg-blue-500 py-1 px-2 rounded-full text-white text-sm">Deposit</p>
-                    <p className="text-xs">12/03/2020</p>
-                    <p className="text-sm">R$ 1.300,00</p>
-                </div>
+                <Transaction 
+                    type={ TransactionType.Deposit }
+                    date="02/03/2021"
+                    value="1.300,00"
+                    unit={ UnitType.BRL }
+                />
             </div>
 
             <div className="grid gap-4 grid-cols-1 w-5/12">
@@ -78,7 +62,7 @@ const Transactions: React.FC = () => {
                 <Action title="Request loan" color="bg-red-500">
                     <Input 
                         type="text"
-                        label="amount"
+                        label="Amount"
                         id="amount"
                     />
                 </Action>
